@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <tbody>
+        {{#each pokemons}}
+        <tr>
+            <td></td>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{type}}</td>
+            <td><a href="/pokemons/{{id}}" class="btn btn-outline-secondary btn-block">Show</a></td>
+            <td><a href="/pokemons/{{id}}/edit" class="btn btn-outline-secondary btn-block">Edit</a></td>
+            <td>
+                <form method="POST" action="/pokemons/{{id}}?_method=DELETE" >
+                    <input class="btn btn-outline-secondary btn-block" type="submit" value="Delete" />
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

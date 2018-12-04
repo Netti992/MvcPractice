@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>MVC Example 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" aria-placeholder="center" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/views/layouts/style.css">
+
+</head>
+
+<body class="mx-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">MVC Example 2</h1>
+        </div>
+    </div>
+    <nav class="navbar navbar-light bg-light justify-content-between text-center">
+        <a class="btn btn-info btn-lg" href="/views/pokemons/new.handlebars" type="button">New</a>
+
+        <a href="#" class="button facebook btn-lg "><span><i class="icon-facebook"></i></span>
+            <p>Facebook</p>
+        </a>
+
+        <a href="#" class="button github btn-lg"><span><i class="icon-github"></i></span>
+            <p>Github</p>
+        </a>
+
+        <a href="#" class="button youtube btn-lg"><span><i class="icon-youtube"></i></span>
+            <p>YouTube</p>
+        </a>
+
+        <a href="#" class="button skype btn-lg"><span><i class="icon-skype"></i></span>
+            <p>skype</p>
+        </a>
+
+        <a href="#" class="button dropbox btn-lg"><span><i class="icon-dropbox"></i></span>
+            <p>dropbox</p>
+        </a>
+
+        <a href="#" class="button instagram btn-lg"><span><i class="icon-instagram"></i></span>
+            <p>instagram</p>
+        </a>
+
+        <a href="#" class="button pinterest btn-lg"><span><i class="icon-pinterest"></i></span>
+            <p>pinterest</p>
+        </a>
+</body>
+<form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+</nav>
+<div class="row">
+    <div class="col-10">
+        {{{body}}}
+    </div>
+    <div class="col-2 text-center">
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-right"></i>
+                        <span>Menu</span>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
+                <a href="/clocks" type="button" class="btn btn-info btn-sm btn-block">Clocks</a>
+                <a href="/pokemons" type="button" class="btn btn-info btn-sm btn-block">Pokemons</a>
+                <a href="/videogames" type="button" class="btn btn-info btn-sm btn-block">Videogames</a>
+                <a href="/clocks" type="button" class="btn btn-info btn-sm btn-block">Clocks</a>
+                <a href="/pokemons" type="button" class="btn btn-info btn-sm btn-block">Pokemons</a>
+                <a href="/videogames" type="button" class="btn btn-info btn-sm btn-block">Videogames</a>
+                <a href="/clocks" type="button" class="btn btn-info btn-sm btn-block">Clocks</a>
+                <a href="/pokemons" type="button" class="btn btn-info btn-sm btn-block">Pokemons</a>
+                <a href="/videogames" type="button" class="btn btn-info btn-sm btn-block">Videogames</a>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</html>
