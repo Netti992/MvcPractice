@@ -10,6 +10,11 @@ pokemons.get('/', (req, res) => {
   });
 });
 
+// new
+pokemons.get('/new', (req, res) => {
+  res.render('pokemons/new.handlebars');
+});
+
 // show
 pokemons.get('/:id', (req, res) => {
   models.Pokemon.findById(req.params.id)
@@ -53,7 +58,7 @@ pokemons.post('/', (req, res) => {
         type: req.body.type})
         .then(pokemon => {
           res.locals.pokemon = pokemon;
-          res.render('pokemons/show.handlebars');
+          res.redirect(`/pokemons`);
         });
     });
 });

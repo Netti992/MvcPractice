@@ -1,4 +1,6 @@
+<a href="/videogames/new" class="btn btn-outline-secondary">Create new videogame!</a>
 <table class="table table-striped">
+    <p></p>
     <tbody>
         {{#each videogames}}
         <tr>
@@ -7,11 +9,12 @@
             <td>{{distributor}}</td>
             <td>{{name}}</td>
             <td>{{type}}</td>
-            td><a href="/videogames/{{id}}" class="btn btn-outline-secondary btn-block">Show</a></td>
+            <td><a href="/videogames/{{id}}" class="btn btn-outline-secondary btn-block">Show</a></td>
             <td><a href="/videogames/{{id}}/edit" class="btn btn-outline-secondary btn-block">Edit</a></td>
             <td>
                 <form method="POST" action="/videogames/{{id}}?_method=DELETE" >
                     <input class="btn btn-outline-secondary btn-block" type="submit" value="Delete" />
+                    </form>
         </tr>
         {{/each}}
     </tbody>

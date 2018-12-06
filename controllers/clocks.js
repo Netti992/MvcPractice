@@ -10,6 +10,11 @@ clocks.get('/', (req, res) => {
   });
 });
 
+// new
+clocks.get('/new', (req, res) => {
+  res.render('clocks/new.handlebars');
+});
+
 // show
 clocks.get('/:id', (req, res) => {
   models.Clock.findById(req.params.id)
@@ -53,7 +58,7 @@ clocks.post('/', (req, res) => {
         type: req.body.type})
         .then(clock => {
           res.locals.clock = clock;
-          res.render('clocks/show.handlebars');
+          res.redirect(`/clocks`);
         });
     });
 });

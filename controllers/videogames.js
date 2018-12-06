@@ -11,6 +11,11 @@ videogames.get('/', (req, res) => {
     });
 });
 
+// new
+videogames.get('/new', (req, res) => {
+  res.render('videogames/new.handlebars');
+});
+
 // show
 videogames.get('/:id', (req, res) => {
   models.Videogame.findById(req.params.id)
@@ -54,7 +59,7 @@ videogames.post('/', (req, res) => {
         type: req.body.type})
         .then(videogame => {
           res.locals.videogame = videogame;
-          res.render('videogames/show.handlebars');
+          res.redirect('/videogames');
         });
     });
 });
